@@ -80,7 +80,7 @@
 				</p>
 				<?php 
 					if ($var <= 100) {
-						echo '<a href="fund.php" class="btn waves-effect waves-light">Fund Me!</a>';
+						echo '<a href="fund.php?topic='.$row["topic"].'" class="btn waves-effect waves-light">Fund Me!</a>';
 					}else{
 						echo '<a href="fund.php" class="btn waves-effect waves-light" disabled>Fund Me!</a>';
 					}
