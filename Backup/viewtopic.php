@@ -12,7 +12,10 @@
 	<?php include 'header.php';?>
 	<div class="row">
 		<?php if ($result->num_rows > 0) {
+			$pdfname = "";
+
 			while ($row = $result->fetch_assoc()) {
+				$pdfname = $row['proponent1']." ".$row['topic'];
 		?>
 		<div class="col s8">
 			<div class="container">
@@ -23,6 +26,7 @@
 				<p class="flow-text">
 					<?php echo $row['abstract']; ?>
 				</p>
+				<object style="width: 100%; height: 100vh" data="papers/<?php echo $pdfname ?>.pdf"></object>
 				<hr>
 				<h5>Competitions Joined</h5>
 				<p class="flow-text">

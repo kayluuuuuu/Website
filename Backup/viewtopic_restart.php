@@ -7,7 +7,11 @@
 	if (empty($_POST['captcha'])){
 		$num = mysqli_query($conn, "SELECT fundObt FROM databasetable_restart WHERE id = $val");
 		while ($row = mysqli_fetch_array($num)) { 
-			$var = $row['fundObt'] + $_POST['amount'];
+			
+			//may error daw to so tinangal ko  muna yung POST[amount]
+			$var = $row['fundObt'];// + $_POST['amount'];
+			//
+
 			$query = "UPDATE databasetable_restart SET fundObt = $var WHERE id = $val";
 			$conn->query($query);
 		}
@@ -24,8 +28,12 @@
 <body class="center">
 	<?php include 'header.php';?>
 	<div class="row">
-		<?php if ($result->num_rows > 0) {
+		<?php 
+			$pdfname = "";
+
+			if ($result->num_rows > 0) {
 			while ($row = $result->fetch_assoc()) {
+				$pdfname = $row['proponent1']." ".$row['topic'];
 		?>
 		<div class="col s8">
 			<div class="container">
@@ -37,6 +45,7 @@
 					<?php echo $row['abstract']; ?>
 				</p>
 				<hr>
+				<object style="width: 100%; height: 50vh" data="papers/<?php echo $pdfname ?>.pdf"></object>
 				<h5>Competitions Joined</h5>
 				<p class="flow-text">
 					<?php 

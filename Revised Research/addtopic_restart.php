@@ -11,7 +11,7 @@
 		<h3>Add your Research Topic</h3>
 		<br>
 		<hr>
-		<form method="post" action="confirm2.php">
+		<form method="post" action="confirm2.php" enctype="multipart/form-data">
 			<div class="row">
 				<div class="input-field col s8 offset-s2">
 					<input type="text" name="topic" id="topic" class="validate">
@@ -41,6 +41,15 @@
 					<textarea id="textarea1" class="materialize-textarea" name="abstract"></textarea>
 					<label for="textarea1">Abstract</label>
 				</div>
+				 <div class="file-field input-field col s8 offset-s2">
+				    <div class="btn">
+					    <span>Upload Research Paper</span>
+					    <input type="file" name="fileToUpload" id="fileToUpload">
+				    </div>
+				    <div class="file-path-wrapper">
+				    	<input class="file-path validate" type="text">
+				    </div>
+			    </div>
 				<div class="input-field col s8 offset-s2">
 					<textarea id="textarea2" class="materialize-textarea" name="comp"></textarea>
 					<label for="textarea2">Competitions Joined</label>
