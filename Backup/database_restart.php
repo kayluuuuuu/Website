@@ -24,11 +24,16 @@
 <body>
 	<?php include 'header.php';?>
 	<div class="container center">
-		<div class="row">
-			<br>
-			<h3>Click the Filter Button to filter data</h3>
+		<div class="left-align">
+			<br><br><br><br>
+			<h3>THE <span class="light-green-text text-accent-4">RE</span><span class="red-text">START<span></span></h3>
+			<p>The RESTART lets you view the important information about ongoing studies of student researchers in PSHS-BRC. This is also where you can help the students financially by donating in the funding section.</p>
 		</div>
+		<br><br><br>
 		<div class="row">
+			<p class="left-align">
+				<b>Click the Filter Button to filter data</b>
+			</p>
 			<nav class="grey lighten-2">
 				<div class="nav-wrapper">
 					<ul class="right hide-on-med-and-down">

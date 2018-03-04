@@ -2,49 +2,46 @@
 	if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username'])){
 		if ($_SESSION['Level']=="admin" || $_SESSION['Level']=="master"|| $_SESSION['Level']=="teacher") {
 			?>
-			<header>
-				<nav class="grey lighten-1">
-					<div class="nav-wrapper">
-						<a href="portal.php" class="left">&nbsp&nbsp&nbspHome</a>
-						<span class="brand-logo center black-text">PSHS-BRC Research Database</span>
-						<ul class="right hide-on-med-and-down">
-		        			<li><a href="addtopic.php">Add Topic</a></li>
-		        			<li><a href="approval.php">Approve Topics</a></li>
-		        			<li><a href="logout.php">Logout</a></li>
-						</ul>
-					</div>
-			</header>
+		 <nav>
+		    <div class="nav-wrapper grey">
+		      <a href="#" class="brand-logo center">PSHS-BRC Research Database</a>
+		      <ul id="nav-mobile" class="left hide-on-med-and-down">
+		        <li class="tooltipped" data-tooltip="Home"><a href="portal.php"><i class="material-icons">home</i></a></li>
+		        <li class="tooltipped" data-tooltip="Add Topic"><a href="addtopic.php"><i class="material-icons " >add</i></a></li>
+		        <li class="tooltipped" data-tooltip="Approve Topic"><a href="approval.php"><i class="material-icons " >check</i></a></li>
+			    <li class="tooltipped" data-tooltip="Log Out"><a href="logout.php"><i class="material-icons " >close</i></a></li>
+		      </ul>
+		    </div>
+		  </nav>
+
 			<?php
 		}else {
 			?>
-			<header>
-				<nav class="grey lighten-1">
-					<div class="nav-wrapper">
-						<a href="portal.php" class="left">&nbsp&nbsp&nbspHome</a>
-						<span class="brand-logo center black-text">PSHS-BRC Research Database</span>
-						<ul class="right hide-on-med-and-down">
-		        			<li><a href="addtopic_restart.php">Add Topic</a></li>
-		        			<li><a href="logout.php">Logout</a></li>
-						</ul>
-					</div>
-					<div class="nav-content"></div>
-				</nav>
-			</header>
+			
+			 <nav>
+			    <div class="nav-wrapper grey">
+			      <a href="#" class="brand-logo center">PSHS-BRC Research Database</a>
+			      <ul id="nav-mobile" class="left hide-on-med-and-down">
+			        <li class="tooltipped" data-tooltip="Home"><a href="portal.php"><i class="material-icons">home</i></a></li>
+			        <li class="tooltipped" data-tooltip="Add Topic"><a href="addtopic_restart.php"><i class="material-icons " >add</i></a></li>
+				    <li class="tooltipped" data-tooltip="Log Out"><a href="logout.php"><i class="material-icons " >close</i></a></li>
+			      </ul>
+			    </div>
+			  </nav>
 			<?php
 		}
 	}else{
 		?>
-		<header>
-			<nav class="grey lighten-1">
-				<div class="nav-wrapper">
-					<a href="portal.php" class="left">&nbsp&nbsp&nbspHome</a>
-					<span class="brand-logo center black-text">PSHS-BRC Research Database</span>
-					<ul class="right hide-on-med-and-down">
-	        			<li><a href="login.php">Log In</a></li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+		 <nav>
+		    <div class="nav-wrapper grey">
+		      <a href="#" class="brand-logo center">PSHS-BRC Research Database</a>
+		      <ul id="nav-mobile" class="left hide-on-med-and-down">
+		        <li class="tooltipped" data-tooltip="Home"><a href="portal.php"><i class="material-icons">home</i></a></li>
+		        <li class="tooltipped" data-tooltip="Log In"><a href="addtopic_restart.php"><i class="material-icons " >supervisor_account</i></a></li>
+		      </ul>
+		    </div>
+		  </nav>
+		        
 		<?php
 	}
 ?>

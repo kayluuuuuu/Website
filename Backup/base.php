@@ -17,7 +17,8 @@
 	}
 ?>
 <link rel="stylesheet" type="text/css" href="css/indexCss.css">
-<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Kalam|Monoton|Nova+Flat|Open+Sans+Condensed:300|Permanent+Marker|Roboto+Slab|Shadows+Into+Light|Source+Code+Pro" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Kalam|Mono
+ton|Nova+Flat|Open+Sans+Condensed:300|Permanent+Marker|Roboto+Slab|Shadows+Into+Light|Source+Code+Pro" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="css/materialize.css"  media="screen" title="no title" charset="utf-8">
 <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
